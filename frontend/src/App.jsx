@@ -3,7 +3,7 @@ import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YA
 import { Activity, HeartPulse, Moon, Brain, Wind, Thermometer, Droplets, Satellite, Bell, RefreshCw, LayoutDashboard, TrendingUp, AlertTriangle, MessageCircle, Settings, ShieldCheck, Sparkles, Send, CheckCircle2, Menu } from "lucide-react";
 import "./styles.css";
 
-const API = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+const API = import.meta.env.VITE_API_URL || "https://astrahealth-ai-backend.onrender.com";
 const nav = [{id:"dashboard",label:"Dashboard",icon:LayoutDashboard},{id:"trends",label:"Health Trends",icon:TrendingUp},{id:"alerts",label:"Alerts",icon:AlertTriangle},{id:"checkin",label:"Wellbeing Check-in",icon:MessageCircle},{id:"mission",label:"Mission Info",icon:Satellite}];
 
 function Metric({Icon,label,value,unit,tone,status}) {
